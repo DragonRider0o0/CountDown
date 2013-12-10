@@ -1,0 +1,13 @@
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Release\resources.pri
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Release\AppxManifest.xml
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Release\CountDown.build.appxrecipe
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\priconfig.xml.intermediate
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\layout.resfiles.intermediate
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\resources.resfiles.intermediate
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\pri.resfiles.intermediate
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\priconfig.xml
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\layout.resfiles
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\resources.resfiles
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\pri.resfiles
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\LanguageQualifiers.txt
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Release\ProjectArchitectures.txt

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CountDown</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- CountDown references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="countDowns">
+    </div>
+    <div id="createCountDown">
+        <input id="countDownName" type="text" placeholder="Coundown Name" />
+        <div id="countDownDate" data-win-control="WinJS.UI.DatePicker"></div>
+        <div id="countDownTime" data-win-control="WinJS.UI.TimePicker"></div>
+        <input type="button" id="create" value="CountDown!" onclick="createCountDown()" />
+    </div>
+</body>
+</html>

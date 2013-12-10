@@ -1,0 +1,13 @@
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Debug\resources.pri
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Debug\AppxManifest.xml
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Debug\CountDown.build.appxrecipe
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\priconfig.xml
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\layout.resfiles
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\resources.resfiles
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\pri.resfiles
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\LanguageQualifiers.txt
+c:\users\michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\ProjectArchitectures.txt
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\priconfig.xml.intermediate
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\layout.resfiles.intermediate
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\resources.resfiles.intermediate
+C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bld\Debug\pri.resfiles.intermediate
