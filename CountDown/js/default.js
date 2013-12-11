@@ -53,6 +53,22 @@ var targetTime = new Date;
                 // your application here.
                 //var dateDiv = document.getElementById("countDownDate").onchange = createCountDown;
             } else {
+                setInterval(update, 1000);
+
+                var divDatePicker = document.getElementById("countDownDate");
+                var divTimePicker = document.getElementById("countDownTime");
+                var datepickerControl = new WinJS.UI.DatePicker(divDatePicker);
+                var timepickerControl = new WinJS.UI.TimePicker(divTimePicker);
+                //resetOutput();
+                datepickerControl.addEventListener("change", function () {
+                    targetDate = datepickerControl.current;
+                });
+                // Create controls
+
+
+                timepickerControl.addEventListener("change", function () {
+                    targetTime = timepickerControl.current;
+                });
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }

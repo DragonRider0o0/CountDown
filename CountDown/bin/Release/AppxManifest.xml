@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="db384981-d986-4ee4-96d1-d3acdaacbbe0" Version="1.0.0.0" Publisher="CN=Michael" ProcessorArchitecture="neutral" />
+  <Identity Name="47688Quimera.47070C028F484" Version="1.0.0.0" Publisher="CN=AA6F9FC7-3176-4213-BF89-057CBCDC3A2F" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>CountDown</DisplayName>
-    <PublisherDisplayName>Michael</PublisherDisplayName>
+    <DisplayName>CountDown . . .</DisplayName>
+    <PublisherDisplayName>Quimera</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -22,8 +22,8 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="CountDown" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="CountDown" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+      <VisualElements DisplayName="CountDown . . ." Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="CountDown . . . An awesome app for counting down to deadlines, events, and holidays." ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="noLogos" WideLogo="images\widelogo.png" ShortName="CountDown . . ." />
         <SplashScreen Image="images\splashscreen.png" />
       </VisualElements>
     </Application>

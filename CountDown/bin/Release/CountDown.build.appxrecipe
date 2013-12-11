@@ -7,41 +7,42 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Release\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\default.html">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\logo.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\splashscreen.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\storelogo.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\js\countdown.js">
-      <PackagePath>js\countdown.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\widelogo.png">
+      <PackagePath>images\widelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

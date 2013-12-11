@@ -32,6 +32,10 @@
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\widelogo.png">
+      <PackagePath>images\widelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>

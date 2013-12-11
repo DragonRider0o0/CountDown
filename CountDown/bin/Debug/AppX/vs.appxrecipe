@@ -5,60 +5,61 @@
     <WindowsUser>Michael</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>45A7FB1D179A67F7DD1BFE6F170F6EFA2911C527CA6E20F11418D790C5768523</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>db384981-d986-4ee4-96d1-d3acdaacbbe0_1.0.0.0_neutral__eq9h3e6grdrp4</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>db384981-d986-4ee4-96d1-d3acdaacbbe0_eq9h3e6grdrp4!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>6A9EF1C4AF97550FF514C0D265745B0616B406DFC4DD1A320C92C26CD761C373</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>db384981-d986-4ee4-96d1-d3acdaacbbe0_1.0.0.0_neutral__f8hxfp1s4tjsj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>db384981-d986-4ee4-96d1-d3acdaacbbe0_f8hxfp1s4tjsj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>db384981-d986-4ee4-96d1-d3acdaacbbe0</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Michael</RegisteredPackagePublisher>
+    <RegisteredPackagePublisher>CN=Quimera Interactive</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-12-09T23:27:51.410</Modified>
+      <Modified>2013-12-11T01:25:38.960</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\default.html">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-12-09T23:17:11.355</Modified>
+      <Modified>2013-12-10T23:34:45.606</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\logo.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-28T07:25:26.000</Modified>
+      <Modified>2013-12-11T01:22:26.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-28T07:25:26.000</Modified>
+      <Modified>2013-12-11T01:23:24.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\splashscreen.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-28T07:25:26.000</Modified>
+      <Modified>2013-12-11T01:21:13.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\images\storelogo.png">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-28T07:25:26.000</Modified>
+      <Modified>2013-12-11T01:23:05.766</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\js\countdown.js">
-      <PackagePath>js\countdown.js</PackagePath>
-      <Modified>2013-12-09T23:12:32.994</Modified>
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\images\widelogo.png">
+      <PackagePath>images\widelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-12-11T01:21:37.037</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-12-09T23:47:03.989</Modified>
+      <Modified>2013-12-11T01:06:55.030</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-11-22T01:37:42.716</Modified>
+      <Modified>2013-12-11T01:10:29.155</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2012\Projects\CountDown\CountDown\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Michael\Desktop\CountDown App\CountDown\CountDown\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-12-09T23:27:50.471</Modified>
+      <Modified>2013-12-11T01:25:38.888</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

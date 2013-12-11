@@ -1,5 +1,25 @@
-﻿// For an introduction to the Blank template, see the following documentation:
+﻿/*
+   Copyright 2013 Quimera Interactive(Michael Richardson)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
+
+var targetDate = new Date;
+var targetTime = new Date;
+
 (function () {
     "use strict";
 
@@ -13,10 +33,42 @@
         {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated)
             {
+                setInterval(update, 1000);
+
+                var divDatePicker = document.getElementById("countDownDate");
+                var divTimePicker = document.getElementById("countDownTime");
+                var datepickerControl = new WinJS.UI.DatePicker(divDatePicker);
+                var timepickerControl = new WinJS.UI.TimePicker(divTimePicker);
+                //resetOutput();
+                datepickerControl.addEventListener("change", function () {
+                    targetDate = datepickerControl.current;
+                });
+                // Create controls
+
+
+                timepickerControl.addEventListener("change", function () {
+                    targetTime = timepickerControl.current;
+                });
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
                 //var dateDiv = document.getElementById("countDownDate").onchange = createCountDown;
             } else {
+                setInterval(update, 1000);
+
+                var divDatePicker = document.getElementById("countDownDate");
+                var divTimePicker = document.getElementById("countDownTime");
+                var datepickerControl = new WinJS.UI.DatePicker(divDatePicker);
+                var timepickerControl = new WinJS.UI.TimePicker(divTimePicker);
+                //resetOutput();
+                datepickerControl.addEventListener("change", function () {
+                    targetDate = datepickerControl.current;
+                });
+                // Create controls
+
+
+                timepickerControl.addEventListener("change", function () {
+                    targetTime = timepickerControl.current;
+                });
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }
@@ -41,13 +93,10 @@ function createCountDown()
 {
     //WinJS.UI.processAll();
     var name = document.getElementById("countDownName").value;
-    var dateDiv = document.getElementById("countDownDate");
-    var targetDate = new WinJS.UI.DatePicker(dateDiv).current;
+
     var year = targetDate.getFullYear();
     var month = targetDate.getMonth();
     var day = targetDate.getDate();
-    var timeDiv = document.getElementById("countDownTime");
-    var targetTime = new WinJS.UI.TimePicker(timeDiv).current;
     var hour = targetTime.getHours();
     var minute = targetTime.getMinutes();
     var second = targetTime.getSeconds();
@@ -59,8 +108,7 @@ function createCountDown()
     console.log(targetDateTime + currentTime);
 
     saveCountDown(name, targetDateTime);
-    var countDowns = retreiveCountDowns();
-    createCountDownElements(countDowns);
+    update();
 
     //countDown(targetDateTime, currentTime);
 
@@ -70,7 +118,13 @@ function createCountDown()
     // Add Logic to update the UI for each countdown every second
 }
 
-function createCountDownElements(countDowns)
+function update()
+{
+    var countDowns = retreiveCountDowns();
+    createAndUpdateCountDownElements(countDowns);
+}
+
+function createAndUpdateCountDownElements(countDowns)
 {
     var countDownsElement = document.getElementById("countDowns");
     for (var countdown in countDowns) {
@@ -78,36 +132,58 @@ function createCountDownElements(countDowns)
             // do stuff
             var name = countdown.toString();
             var time = countDowns[name];
-            var countDownElement = createCountDownElement(name, time);
-
-            countDownsElement.appendChild(countDownElement);
+            createAndUpdateCountDownElement(name, time);
         }
     }
     //For each item you additionally need to check if it is an object's 'key' - property.
-    //countdowns.get
-
-
-
-    
+    //countdowns.get   
 }
 
-function createCountDownElement(name, time)
+function createAndUpdateCountDownElement(name, time)
 {
-    var countDownElement = document.createElement('div');
+    var countDownElement;
+    var countDownExists ;
+    if (document.getElementById(name) != null) {
+        countDownElement = document.getElementById(name)
+        countDownExists = true;
+    }
+    else
+    {
+        countDownElement = document.createElement('div');
+        countDownElement.id = name;
+        countDownElement.className = "CountDown";
+        countDownExists = false;
+    }
     var currentTime = new Date();
-    var millisecondsToEvent = currentTime.getTime() - time.getTime();
-    var milliseconds = millisecondsToEvent % 1000;
-    var seconds = checkTime(Math.floor(millisecondsToEvent / (1000))%60);
-    var minutes = checkTime(Math.floor(millisecondsToEvent / (1000 * 60)) % 60);
-    var hours = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60)) % 24);
-    var days = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60 * 24)) % 30);
-    var months = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60 * 24 * 30)) % 12);
-    var years = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60 * 24 * 30 * 12)));
-    
+    var milliseconds;
+    var seconds;
+    var minutes;
+    var hours;
+    var days;
+    var months;
+    var years;
+    var millisecondsToEvent = time.getTime() - currentTime.getTime();
+    if (millisecondsToEvent <= 0) {
+        milliseconds = 0;
+        seconds = checkTime(0);
+        minutes = checkTime(0);
+        hours = checkTime(0);
+        days = checkTime(0);
+        months = checkTime(0);
+        years = checkTime(0);
+    }
+    else
+    {
+        milliseconds = millisecondsToEvent % 1000;
+        seconds = checkTime(Math.floor(millisecondsToEvent / (1000)) % 60);
+        minutes = checkTime(Math.floor(millisecondsToEvent / (1000 * 60)) % 60);
+        hours = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60)) % 24);
+        days = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60 * 24)) % 30);
+        months = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60 * 24 * 30)) % 12);
+        years = checkTime(Math.floor(millisecondsToEvent / (1000 * 60 * 60 * 24 * 30 * 12)));
+    }
 
-
-    countDownElement.innerHTML = '  <div class="CountDown" id="' + name + '">\
-                                        <div class="Name">' + name + '</div>\
+    countDownElement.innerHTML = '      <div class="Name">' + name + '</div>\
                                         <div class="Digit">Y</div> \
                                         <div class="Digit" id="Year1">' + years.toString().charAt(0) + '</div>\
                                         <div class="Digit" id="Year2">' + years.toString().charAt(1) + '</div>\
@@ -126,57 +202,18 @@ function createCountDownElement(name, time)
                                         <div class="Digit">S</div>\
                                         <div class="Digit" id="Second1">' + seconds.toString().charAt(0) + '</div>\
                                         <div class="Digit" id="Second2">' + seconds.toString().charAt(1) + '</div>\
-                                    </div>';
-    return countDownElement;
+                                        <input type="button" class="countDownButton" id="' + name + 'button" value="X" />';
+    if (!countDownExists) {
+        document.getElementById("countDowns").appendChild(countDownElement);
+    }
+    else
+    {
+
+    }
+    countDownButton = document.getElementById(name + 'button');
+    countDownButton.setAttribute("onclick", 'deleteCountDown("' + name + '");');
+    //countDownButton.onclick = deleteCountDown(name);
 }
-
-/*
-function countDown(target, now)
-{
-    //var targetTime = target.getTime();
-    //var nowTime = now.getTime();
-
-    var yearsLeft = target.getFullYear() - now.getFullYear();
-    var monthsLeft = target.getMonth() - now.getMonth();
-    var daysLeft = target.getDate() - now.getDate();
-    var hoursLeft = target.getHours() - now.getHours();
-    var minutesLeft = target.getMinutes() - now.getMinutes();
-    var secondsLeft = target.getSeconds() - now.getSeconds();
-    console.log(yearsLeft + " : " + monthsLeft + " : " + daysLeft + " : " + hoursLeft + " : " + minutesLeft + " : " + secondsLeft);
-
-    var yearOne = document.getElementById("Year1");
-    yearOne.innerHTML = Math.floor(yearsLeft / 10);
-    var yearTwo = document.getElementById("Year2");
-    yearTwo.innerHTML = yearsLeft % 10;
-
-    var monthOne = document.getElementById("Month1");
-    monthOne.innerHTML = Math.floor(monthsLeft / 10);
-    var monthTwo = document.getElementById("Month2");
-    monthTwo.innerHTML = monthsLeft % 10;
-
-    var dayOne = document.getElementById("Day1");
-    dayOne.innerHTML = Math.floor(daysLeft / 10);
-    var dayTwo = document.getElementById("Day2");
-    dayTwo.innerHTML = daysLeft % 10;
-
-    var hourOne = document.getElementById("Hour1");
-    hourOne.innerHTML = Math.floor(hoursLeft / 10);
-    var hourTwo = document.getElementById("Hour2");
-    hourTwo.innerHTML = hoursLeft % 10;
-
-    var minuteOne = document.getElementById("Minute1");
-    minuteOne.innerHTML = Math.floor(minutesLeft / 10);
-    var minuteTwo = document.getElementById("Minute2");
-    minuteTwo.innerHTML = minutesLeft % 10;
-
-    var secondOne = document.getElementById("Second1");
-    secondOne.innerHTML = Math.floor(secondsLeft / 10);
-    var secondTwo = document.getElementById("Second2");
-    secondTwo.innerHTML = secondsLeft % 10;
-    //setTimeout(countDown(target,name) 
-
-}
-*/
 
 function saveCountDown(countDownName, countDownTime) {
     var applicationData = Windows.Storage.ApplicationData.current;
@@ -215,9 +252,6 @@ function retreiveCountDowns() {
         return countDowns;
 
     }
-    
-
-
 }
 
 function checkTime(i)
@@ -227,4 +261,19 @@ function checkTime(i)
         i = "0" + i;
     }
     return i;
+}
+
+function resetOutput() {
+    this.divDatePicker.innerHTML = "";
+    this.divTimePicker.innerHTML = "";
+}
+
+function deleteCountDown(name) {
+    var applicationData = Windows.Storage.ApplicationData.current;
+    var localSettings = applicationData.localSettings;
+    var countDowns = localSettings.values["countdowns"];
+    countDowns.remove(name);
+    localSettings.values["countdowns"] = countDowns;
+    node = document.getElementById(name);
+    node.parentNode.removeChild(node);
 }
