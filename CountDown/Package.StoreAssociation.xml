@@ -463,5 +463,10 @@
     <MainPackageIdentityName>47688Quimera.WhiteBoard</MainPackageIdentityName>
     <MainPackageIdentityName>47688Quimera.WideRuledPad</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/7dbbb328-4493-47e2-9330-f9184dd1ed4e" />
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/7dbbb328-4493-47e2-9330-f9184dd1ed4e">
+    <PackageInfo>
+      <PackageArchitecture>neutral</PackageArchitecture>
+      <PackageMaxArchitectureVersion>1.0.0.0</PackageMaxArchitectureVersion>
+    </PackageInfo>
+  </PackageInfoList>
 </StoreAssociation>

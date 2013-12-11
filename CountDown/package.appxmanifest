@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="47688Quimera.47070C028F484" Version="1.0.0.0" Publisher="CN=AA6F9FC7-3176-4213-BF89-057CBCDC3A2F" />
+  <Identity Name="47688Quimera.47070C028F484" Version="1.0.0.1" Publisher="CN=AA6F9FC7-3176-4213-BF89-057CBCDC3A2F" />
   <Properties>
     <DisplayName>CountDown . . .</DisplayName>
     <PublisherDisplayName>Quimera</PublisherDisplayName>
@@ -21,7 +21,4 @@
       </VisualElements>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
 </Package>

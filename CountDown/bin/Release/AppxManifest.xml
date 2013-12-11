@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="47688Quimera.47070C028F484" Version="1.0.0.0" Publisher="CN=AA6F9FC7-3176-4213-BF89-057CBCDC3A2F" ProcessorArchitecture="neutral" />
+  <Identity Name="47688Quimera.47070C028F484" Version="1.0.0.1" Publisher="CN=AA6F9FC7-3176-4213-BF89-057CBCDC3A2F" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>CountDown . . .</DisplayName>
     <PublisherDisplayName>Quimera</PublisherDisplayName>
@@ -28,9 +28,6 @@
       </VisualElements>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
   <Dependencies>
     <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20512" />
   </Dependencies>
